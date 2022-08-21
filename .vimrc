@@ -87,11 +87,11 @@ map <C-n> :NERDTreeToggle<CR>
 map <C-b> :SyntasticCheck<CR>
 
 "  python vim template
-if has("autocmd")
-    augroup templates
-        autocmd BufNewFile *.py 0r ~/vimfiles/templates/skeleton.py
-    augroup END
-endif
+" if has("autocmd")
+"     augroup templates
+"         autocmd BufNewFile *.py 0r ~/vimfiles/templates/skeleton.py
+"     augroup END
+" endif
 
 "  Remember last line
 if has("autocmd")
