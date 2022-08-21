@@ -101,3 +101,6 @@ endif
 " Draw line in char 80
 highlight ColorColumn ctermbg=gray
 set colorcolumn=80
+
+" Vim AirLine Config
+let g:airline#extensions#tabline#enabled = 1
