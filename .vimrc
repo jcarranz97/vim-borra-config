@@ -17,6 +17,9 @@ Plugin 'vim-syntastic/syntastic'
 " Vim Plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+" Git Plugins
+Plugin 'tpope/vim-fugitive'
+Plugin 'mhinz/vim-signify'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
