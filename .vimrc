@@ -94,6 +94,13 @@ let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
 map <C-p> :TagbarToggle<CR>
 map <C-n> :NERDTreeToggle<CR>
 map <C-b> :SyntasticCheck<CR>
+map <C-i> :bnext<CR>
+map <C-u> :bprevious<CR>
+nmap <F2> :GF?<CR>
+nmap <F3> :GFiles<CR>
+nmap <F4> :Ag<CR>
+nmap <F5> :Ar<CR>
+
 
 "  python vim template
 " if has("autocmd")
