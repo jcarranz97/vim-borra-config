@@ -20,6 +20,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Git Plugins
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
+" Vim Colors
+Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'cocopon/iceberg.vim'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -104,6 +107,10 @@ endif
 " Draw line in char 80
 highlight ColorColumn ctermbg=gray
 set colorcolumn=80
+
+" VIm Colors - Config
+set background=dark
+colorscheme PaperColor
 
 " Vim AirLine Config
 let g:airline#extensions#tabline#enabled = 1
