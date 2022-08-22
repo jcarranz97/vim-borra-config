@@ -20,6 +20,9 @@ Plugin 'vim-airline/vim-airline-themes'
 " Git Plugins
 Plugin 'tpope/vim-fugitive'
 Plugin 'mhinz/vim-signify'
+" Git/Search
+Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plugin 'junegunn/fzf.vim'
 " Vim Colors
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'cocopon/iceberg.vim'
