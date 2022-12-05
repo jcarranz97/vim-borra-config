@@ -27,6 +27,7 @@ Plugin 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plugin 'junegunn/fzf.vim'
 " Vim Colors
 Plugin 'catppuccin/nvim'
+Plugin 'arcticicestudio/nord-vim'
 
 " add all your plugins here (note older versions of Vundle
 " used Bundle instead of Plugin)
@@ -122,6 +123,7 @@ set colorcolumn=80
 " VIm Colors - Config
 set background=dark
 colorscheme catppuccin
+colorscheme nord
 
 " Vim AirLine Config
 let g:airline#extensions#tabline#enabled = 1
