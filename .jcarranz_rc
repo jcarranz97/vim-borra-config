@@ -1,5 +1,5 @@
 # Juan Config
-echo "Welcome back Sir!!
+echo "Welcome back Sir!!"
 export MYVIMRC=/home/juan/.vimrc
 export VIMINIT='source $MYVIMRC'
 
