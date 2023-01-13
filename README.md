@@ -1,7 +1,17 @@
 # vim-borra-config
 
+# Create symlinks
+ln -s /home/jcarranz/repos/vim-borra-config/.vimrc /home/jcarranz/.vimrc
+ln -s /home/jcarranz/repos/vim-borra-config/.jcarranz_rc /home/jcarranz/.jcarranz_rc
+
 # Modify VIMINIT
+export MYVIMRC=/home/jcarranz/.vimrc
 export VIMINIT='source $MYVIMRC'
+
+# Add below lines in .bashrc file
+if [ -f ~/.jcarranz_rc ]; then
+    . ~/.jcarranz_rc
+fi
 
 # Download Bundle
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
