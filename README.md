@@ -45,3 +45,13 @@ Install input remmapper from https://github.com/sezanzeb/input-remapper
 Then do custom remapping
 
 ![Screenshot](images/input_remmaper.png)
+
+
+# Note taking APP
+joplin
+https://joplinapp.org/help/#desktop-applications
+
+Installation
+```
+wget -O - https://raw.githubusercontent.com/laurent22/joplin/dev/Joplin_install_and_update.sh | bash
+```
