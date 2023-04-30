@@ -13,6 +13,8 @@ if [ -f /opt/ros/humble/setup.bash ]; then
 	echo "ROS 2 is setup"
 	source /opt/ros/humble/setup.bash
 	# ROS2 Environment Variables
-	export ROS_DOMAIN_ID=2011
+	export ROS_DOMAIN_ID=8
 	export ROS_LOCALHOST_ONLY=1
 fi
+
+alias get_idf='. $HOME/repos/esp-idf/export.sh'
