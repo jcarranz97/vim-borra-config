@@ -53,6 +53,16 @@ au BufNewFile,BufRead *.py
     \ set autoindent |
     \ set fileformat=unix|
 
+"  C Code indentation
+au BufNewFile,BufRead *.c
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix|
+
 " Syntastic config 
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
@@ -77,9 +87,6 @@ let g:syntastic_python_pylint_post_args="--max-line-length=110"
 "     \ set tabstop=2 |
 "     \ set softtabstop=2 |
 "     \ set shiftwidth=2 |
-set tabstop=2 
-set softtabstop=2 |
-set shiftwidth=2 |
 set rnu
 set nowrap
 
