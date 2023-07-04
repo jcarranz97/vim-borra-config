@@ -18,3 +18,12 @@ if [ -f /opt/ros/humble/setup.bash ]; then
 fi
 
 alias get_idf='. $HOME/repos/esp-idf/export.sh'
+
+# Oh My Posh Configuration
+# https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/
+# My Font: MesloLGLDZ Nerd Font Mono
+if test -f /usr/local/bin/oh-my-posh; then
+    export POSH_THEME=emodipt-extend
+    echo "Oh My Posh Found!!! Using '$POSH_THEME' Theme"
+    eval "$(oh-my-posh --init --shell bash --config ~/.poshthemes/$POSH_THEME.omp.json )"
+fi
