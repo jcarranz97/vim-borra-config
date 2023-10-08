@@ -1,5 +1,14 @@
 # vim-borra-config
 
+# Install Latest Neovim
+Reference: https://github.com/neovim/neovim/releases/tag/nightly
+```
+wget https://github.com/neovim/neovim/releases/download/nightly/nvim.appimage
+chmod u+x nvim.appimage
+./nvim.appimage --appimage-extract
+sudo ln -s /home/jcarranz/.nvim/squashfs-root/usr/bin/nvim /usr/bin/nvim
+```
+
 # Create symlinks
 ```
 ln -s /home/jcarranz/repos/vim-borra-config/.vimrc /home/jcarranz/.vimrc
@@ -25,7 +34,7 @@ fi
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 ```
 
-Run PluginInstal
+Open vim and Run PluginInstall
 
 # Create git aliasesvimrc
 ```
