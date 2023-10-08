@@ -1,6 +1,6 @@
 # Juan Config
 echo "Welcome back Sir!!"
-export MYVIMRC=/home/juan/.vimrc
+export MYVIMRC=/home/jcarranz/.vimrc
 export VIMINIT='source $MYVIMRC'
 
 alias vim='nvim'
