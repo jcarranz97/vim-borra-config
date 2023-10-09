@@ -43,10 +43,14 @@ git config --global alias.br branch
 git config --global alias.ci commit
 git config --global alias.st status
 ```
+# Install Oh my Posh Ubuntu
+https://calebschoepp.com/blog/2021/how-to-setup-oh-my-posh-on-ubuntu/
+My Font: MesloLGLDZ Nerd Font Mono
 
 # Other helpfull links
 https://vi.stackexchange.com/questions/3359/how-do-i-fix-the-status-bar-symbols-in-the-airline-plugin
 https://docs.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup#install-a-nerd-font
+https://learn.microsoft.com/en-us/windows/terminal/tutorials/custom-prompt-setup#customize-your-wsl-prompt-with-oh-my-posh
 https://windowsterminalthemes.dev
 
 # Key remmaping (Ubuntu)
