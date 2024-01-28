@@ -16,6 +16,13 @@ if [ -f /opt/ros/humble/setup.bash ]; then
 	export ROS_DOMAIN_ID=8
 	export ROS_LOCALHOST_ONLY=1
 	echo "ROS 2 is setup - ($ROS_DISTRO)"
+	if [ -f /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash ]; then
+		source /usr/share/colcon_argcomplete/hook/colcon-argcomplete.bash
+	fi
+	if [ -f /home/juan/ros2_ws/install/local_setup.bash ]; then
+		echo "ROS 2 Workspace is setup"
+		source /home/juan/ros2_ws/install/local_setup.bash
+	fi
 fi
 
 alias get_idf='. $HOME/repos/esp-idf/export.sh'
