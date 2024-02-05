@@ -13,7 +13,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'preservim/tagbar'
-Plugin 'vim-syntastic/syntastic'
+Plugin 'dense-analysis/ale'
 " Vim Plugins
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -54,7 +54,7 @@ au BufNewFile,BufRead *.py
     \ set fileformat=unix|
 
 "  C Code indentation
-au BufNewFile,BufRead *.c
+au BufNewFile,BufRead *.c,*.cpp
     \ set tabstop=4 |
     \ set softtabstop=4 |
     \ set shiftwidth=4 |
@@ -147,3 +147,32 @@ endif
 
 " git-blame config
 let g:gitblame_message_template = ' <author> • <sha> • <date> • <summary>'
+let g:python3_host_prog = '/usr/bin/python3'
+let g:python_host_prog = '/usr/bin/python3'
+
+" Add ros humbe libraries to path
+if isdirectory("/opt/ros/humble/include")
+    set path+=/opt/ros/humble/include
+    echo $path
+endif
+
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
+
+" C/C++ ROS 2 Configuration
+let g:ale_cpp_cc_options = '-std=c++17 -Wall -I/opt/ros/humble/include -DSOME=\"define\"'
+
+function! LinterStatus() abort
+    let l:counts = ale#statusline#Count(bufnr(''))
+
+    let l:all_errors = l:counts.error + l:counts.style_error
+    let l:all_non_errors = l:counts.total - l:all_errors
+
+    return l:counts.total == 0 ? 'OK' : printf(
+    \   '%dW %dE',
+    \   all_non_errors,
+    \   all_errors
+    \)
+endfunction
+
+set statusline=%{LinterStatus()}
